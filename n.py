@@ -6,6 +6,7 @@ def getdate():
 def menu():
     print("1.store data")
     print("2.retrive data")
+    print("3.add client")
     print("0.exit()")
 
 def chooseClient():
@@ -62,3 +63,8 @@ while a!=0:
         dietOrWork(c)
         dw=int(input("Enter the operation that you want to do\n"))
         retrive(c,dw)
+    elif a==3:
+        cli=input("Enter the name of new client...\n")
+        client.append(cli)
+    else:
+        print("Invalid operation...!!")
